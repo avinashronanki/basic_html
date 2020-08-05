@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="left-side">
+                <div class="link-wrap">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="link-wrap">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="name">
+                    <div>Debbi</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/bruce-tang-PH9ucxgjb-Y-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/elena-de-soto-w423NnHFjFg-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/fidel-fernando-249DzAuJTqQ-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/kaizen-nguy-n-jcLcWL8D7AQ-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/nikhita-singhal-k8y9HrzonOQ-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/pineapple-supply-co-T7h7_v4Nwao-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/kelsey-chance-tAH2cA_BL5g-unsplash.jpg) "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/pratiksha-mohanty-SxHxyNx-6YI-unsplash.jpg "></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logo.png" alt="xyz">
+                        </div>
+                        <div class="subtitle"> Happy Birthday </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+</script>
+</html>
